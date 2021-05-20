@@ -1,0 +1,38 @@
+10/25% - Basics
+    0/10% - Readme
+    10/10% - git: successful commit on time, multiple commits, tagged
+    0/ 5% - CircuitVerse: created project in group assignment
+20/25% - ALU
+    0/5% - Documentation
+    3/3% - 1-bit add result
+    3/3% - 1-bit add carry
+    3/3% - 1-bit and
+    3/3% - 1-bit or
+    3/3% - 1-bit xor
+    1/1% - 4-bit add
+    1/1% - 4-bit subtract
+    1/1% - 4-bit and
+    1/1% - 4-bit or
+    1/1% - 4-bit xor
+15/25% - float-multiply
+    5/ 5% - Compiles and executes without error
+    5/10% - Regular multiplication (e.g. 1*1, -100*1023, 0.5*-0.75, 100*0.5)
+    5/ 5% - Handle inf/nan input cases
+    0/ 1% - Overflow (3.4e38 * 3.4e38, -3.4e38 * 3.4e38)
+    0/ 1% - Subnormal operands (1e38 * 1e-38) [Infinite loop]
+    0/ 1% - Subnormal result (1 * 1e-38, 1e-19*1e-19) [Infinite loop]
+    0/ 1% - Underflow (2e-45 * 2e-45)
+    0/ 1% - Zero result (0 * 1) [Infinite loop]
+20/25% - float-add
+    5/ 5% - Compiles and executes without error
+    10/10% - Regular addition (e.g. 8+9, 0.75+10, 10 + 0.75)
+    3/ 4% - Handle inf/nan input cases [Doesn't handle 8 9.78e45 ]
+    0.5/ 1% - Negative operands (e.g. 1 + -2, -3 + 1, -7 + -8)
+    0.5/ 1% - Loss of precision (e.g. 1.7e7 + 1, 1 + 5e-8)
+    0/ 1% - Overflow (3.4e38 + 3.4e38, -3.4e38 + -3.4e38)
+    1/ 1% - Subnormal operands (1e-38 + 1e-38)
+    0/ 1% - Subnormal result (0.5e-38 + 0.5e-38, 5e-38 + -4e-38)
+    0/ 1% - Zero result (1 * -1, 0 + 0)
+----
+65/100% Total
+
